@@ -10,55 +10,43 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+      <h1 class="heading-xlarge">Table Thing</h1>
 
       <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+        heres a table with a line at the top where the title row is wider than the body rows
       </p>
 
-      <h2 class="heading-medium">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-			<h2 class="heading-medium">Examples and documentation</h2>
-
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
-
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
+      <table>
+        <thead>
+          <!-- This is so theres a line at the very top -->
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+          <!-- this is the actual heading the style is applied here -->
+          <tr>
+            <th style="height: 5em;" scope="col">Heading</th>
+            <th scope="col">Heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>thing</td>
+            <td>thing</td>
+          </tr>
+          <tr>
+            <td>thing</td>
+            <td>thing</td>
+          </tr>
+          <tr>
+            <td>thing</td>
+            <td>thing</td>
+          </tr>
+        </tbody>
+      </table>
 
     </div>
   </div>
 </main>
 
 {% endblock %}
-
-
